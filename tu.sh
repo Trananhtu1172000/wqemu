@@ -1,3 +1,6 @@
+sudo adduser akuhnet
+sudo usermod -aG sudo,adm akuhnet
+sudo -i
 rm -rf ngrok  ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 echo "Download ngrok"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
