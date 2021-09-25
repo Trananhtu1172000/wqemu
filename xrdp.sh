@@ -4,7 +4,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/nu
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "Ctrl + V Authtoken: " CRP 
 ./ngrok authtoken $CRP 
-nohup ./ngrok tcp 3389 &>/dev/null &
+nohup ./ngrok tcp --region ap 3389 &>/dev/null &
 echo Downloading File From akuh.net
 sudo apt install -y xfce4 xfce4-goodies
 sudo apt-get install -y xrdp
